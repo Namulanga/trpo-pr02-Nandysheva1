@@ -5,7 +5,7 @@
   "scripts": {
   "build": "sass scss/styles.scss css/styles.css --no-source-map",
   "watch": "sass --watch scss/styles.scss css/styles.css --no-source-map"
-}
+},
   "devDependencies": {
     "sass": "^1.105.1"
   },

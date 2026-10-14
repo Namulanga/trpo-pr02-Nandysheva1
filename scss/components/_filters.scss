@@ -1,0 +1,24 @@
+@use '../variables' as *;
+
+.filters {
+  padding: $space;
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius;
+  &__title {
+    margin-bottom: $space;
+    font-size: 1.1rem;
+  }
+  &__group {
+    margin: 0 0 $space;
+    padding: 0;
+    border: 0;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-block: 4px;
+    cursor: pointer;
+  }
+}

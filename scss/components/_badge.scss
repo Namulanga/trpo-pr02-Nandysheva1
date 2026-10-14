@@ -1,0 +1,12 @@
+@use '../variables' as *;
+
+.badge {
+  display: inline-block;
+  justify-self: start;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: $accent;
+  background: rgba($accent, 0.1);
+  border-radius: 999px;
+}

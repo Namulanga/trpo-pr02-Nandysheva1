@@ -1,0 +1,17 @@
+@use '../variables' as *;
+.button {
+  padding: 8px $space;
+  font: inherit;
+  color: $surface;
+  background: $accent;
+  border: 0;
+  border-radius: $radius;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1.1);
+  }
+  &:focus-visible {
+    outline: 3px solid rgba($accent, 0.45);
+    outline-offset: 2px;
+  }
+}

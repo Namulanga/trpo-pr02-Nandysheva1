@@ -1,0 +1,63 @@
+@use 'variables' as *;
+.container {
+  width: 100%;
+  max-width: $container;
+  margin-inline: auto;
+  padding-inline: $space;
+}
+.site-header {
+  background: $surface;
+  border-bottom: 1px solid $border;
+
+  &__inner {
+    width: 100%;
+    max-width: $container;
+    margin-inline: auto;
+    padding-inline: $space;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space;
+    padding-block: $space;
+  }
+  &__logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $accent;
+    text-decoration: none;
+  }
+}
+.nav {
+  display: flex;
+  gap: $space;
+  &__link {
+    color: $text;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
+    &:focus-visible {
+      outline: 3px solid rgba($accent, 0.45);
+      outline-offset: 2px;
+    }
+  }
+}
+.page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 32px;
+  align-items: start;
+  padding-block: 32px;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+.site-footer {
+  margin-top: 32px;
+  padding-block: 24px;
+  text-align: center;
+  color: $muted;
+  border-top: 1px solid $border;
+}
