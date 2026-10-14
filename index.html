@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог учебных товаров</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="#">Учебный каталог</a>
+            <nav class="nav" aria-label="ОСновная навигация">
+                <a class="nav__link" href="#catalog">Каталог</a>
+                <a class="nav__link" href="#info">О данных</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <aside class="filters" aria-label="Фильтры">
+            <h2 class="filters__title">Категории</h2>
+            <form id="filter-form">
+            <fieldset class="filters__group">
+                <label class="filters__label"><input type="checkbox" name ="category" value="Книги" checked>Книги</label>
+                <label class="filters__label"><input type="checkbox" name ="category" value="Курсы" checked>Курсы</label>
+                <label class="filters__label"><input type="checkbox" name ="category" value="Инстурменты" checked>Инстурменты</label>
+            </fieldset>    
+            <button class="button" type="reset">Сбросить</button>
+        </form>
+    </aside>
+
+    <section class="catalog" id="catalog">
+        <div class="catalog__head">
+            <h1>Каталог</h1>
+            <p class="card__meta">Показано: <span id="show-count">18</span></p>
+        </div>
+
+        <div class="catalog__grid" id="grid">
+            <article class="card" data-id="1" data-category="Книги" data-price="575" data-rating="4.0">
+                <img class="card__image" src="images/product-01.svg" alt="Учебный товар 1" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Книги</span>
+                    <h3 class="card__title">Учебный товар 1</h3>
+                    <p class="card__meta">Рейтинг: 4.0</p>
+                    <p class="card__price">575 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="2" data-category="Курсы" data-price="660" data-rating="4.2">
+                <img class="card__image" src="images/product-02.svg" alt="Учебный товар 2" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Курсы</span>
+                    <h3 class="card__title">Учебный товар 2</h3>
+                    <p class="card__meta">Рейтинг: 4.2</p>
+                    <p class="card__price">660 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="3" data-category="Инструменты" data-price="745" data-rating="4.4">
+                <img class="card__image" src="images/product-03.svg" alt="Учебный товар 3" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Инструменты</span>
+                    <h3 class="card__title">Учебный товар 3</h3>
+                    <p class="card__meta">Рейтинг: 4.4</p>
+                    <p class="card__price">745 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="4" data-category="Книги" data-price="830" data-rating="4.6">
+                <img class="card__image" src="images/product-01.svg" alt="Учебный товар 4" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Книги</span>
+                    <h3 class="card__title">Учебный товар 4</h3>
+                    <p class="card__meta">Рейтинг: 4.6</p>
+                    <p class="card__price">830 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="5" data-category="Курсы" data-price="915" data-rating="4.8">
+                <img class="card__image" src="images/product-02.svg" alt="Учебный товар 5" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Курсы</span>
+                    <h3 class="card__title">Учебный товар 5</h3>
+                    <p class="card__meta">Рейтинг: 4.8</p>
+                    <p class="card__price">915 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="6" data-category="Инструменты" data-price="1000" data-rating="3,8">
+                <img class="card__image" src="images/product-03.svg" alt="Учебный товар 6" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Инструменты</span>
+                    <h3 class="card__title">Учебный товар 6</h3>
+                    <p class="card__meta">Рейтинг: 3,8</p>
+                    <p class="card__price">1000 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="7" data-category="Книги" data-price="1085" data-rating="4.0">
+                <img class="card__image" src="images/product-01.svg" alt="Учебный товар 7" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Книги</span>
+                    <h3 class="card__title">Учебный товар 7</h3>
+                    <p class="card__meta">Рейтинг: 4.0</p>
+                    <p class="card__price">1085 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="8" data-category="Курсы" data-price="1170" data-rating="4.2">
+                <img class="card__image" src="images/product-02.svg" alt="Учебный товар 8" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Курсы</span>
+                    <h3 class="card__title">Учебный товар 8</h3>
+                    <p class="card__meta">Рейтинг: 4.2</p>
+                    <p class="card__price">1170 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="9" data-category="Инструменты" data-price="1255" data-rating="4.4">
+                <img class="card__image" src="images/product-03.svg" alt="Учебный товар 9" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Инструменты</span>
+                    <h3 class="card__title">Учебный товар 9</h3>
+                    <p class="card__meta">Рейтинг: 4.4</p>
+                    <p class="card__price">1255 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="10" data-category="Книги" data-price="1340" data-rating="4.6">
+                <img class="card__image" src="images/product-01.svg" alt="Учебный товар 10" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Книги</span>
+                    <h3 class="card__title">Учебный товар 10</h3>
+                    <p class="card__meta">Рейтинг: 4.6</p>
+                    <p class="card__price">1340 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="11" data-category="Курсы" data-price="1425" data-rating="4.8">
+                <img class="card__image" src="images/product-02.svg" alt="Учебный товар 11" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Курсы</span>
+                    <h3 class="card__title">Учебный товар 11</h3>
+                    <p class="card__meta">Рейтинг: 4.8</p>
+                    <p class="card__price">1425 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="12" data-category="Инструменты" data-price="1510" data-rating="3.8">
+                <img class="card__image" src="images/product-03.svg" alt="Учебный товар 12" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Инструменты</span>
+                    <h3 class="card__title">Учебный товар 12</h3>
+                    <p class="card__meta">Рейтинг: 3.8</p>
+                    <p class="card__price">1510 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="13" data-category="Книги" data-price="1595" data-rating="4.0">
+                <img class="card__image" src="images/product-01.svg" alt="Учебный товар 13" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Книги</span>
+                    <h3 class="card__title">Учебный товар 13</h3>
+                    <p class="card__meta">Рейтинг: 4.0</p>
+                    <p class="card__price">1595 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="14" data-category="Курсы" data-price="1680" data-rating="4.2">
+                <img class="card__image" src="images/product-02.svg" alt="Учебный товар 14" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Курсы</span>
+                    <h3 class="card__title">Учебный товар 14</h3>
+                    <p class="card__meta">Рейтинг: 4.2</p>
+                    <p class="card__price">1680 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="15" data-category="Инструменты" data-price="1765" data-rating="4.4">
+                <img class="card__image" src="images/product-03.svg" alt="Учебный товар 15" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Инструменты</span>
+                    <h3 class="card__title">Учебный товар 15</h3>
+                    <p class="card__meta">Рейтинг: 4.4</p>
+                    <p class="card__price">1765 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="16" data-category="Книги" data-price="1850" data-rating="4.6">
+                <img class="card__image" src="images/product-01.svg" alt="Учебный товар 16" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Книги</span>
+                    <h3 class="card__title">Учебный товар 16</h3>
+                    <p class="card__meta">Рейтинг: 4.6</p>
+                    <p class="card__price">1850 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="17" data-category="Курсы" data-price="1935" data-rating="4.8">
+                <img class="card__image" src="images/product-02.svg" alt="Учебный товар 17" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Курсы</span>
+                    <h3 class="card__title">Учебный товар 17</h3>
+                    <p class="card__meta">Рейтинг: 4.8</p>
+                    <p class="card__price">1935 руб</p>
+                </div>
+            </article>
+            <article class="card" data-id="18" data-category="Инструменты" data-price="2020" data-rating="3.8">
+                <img class="card__image" src="images/product-03.svg" alt="Учебный товар 18" width="320" height="180">
+                <div class="card__body">
+                    <span class="badge">Инструменты</span>
+                    <h3 class="card__title">Учебный товар 18</h3>
+                    <p class="card__meta">Рейтинг: 3.8</p>
+                    <p class="card__price">2020 руб</p>
+                </div>
+            </article>
+        </div>
+        <p class="catalog__empty" id="empty" hidden>Ничего не найдено. Выберите хотя бы одну категорию</p>
+    </section>
+</main>
+
+<section class="container" id="info">
+    <div class="info">
+        <h2 class="info__title">О данных</h2>
+        <ul class="info__list">
+            <li><span class="info__value">18</span>товаров</li>
+            <li><span class="info__value">575-2020 руб</span>диапазон цен</li>
+            <li><span class="info__value">4.3</span>средний рейтинг</li>
+            <li><span class="info__value">3</span>категории</li>
+         </ul>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">Практическая работа№2</div>
+</footer>
+
+</body> 
+</html>
