@@ -1,5 +1,6 @@
 @use '../variables' as *;
-
+@use '../functions' as *;
+@use '../mixins' as *;
 .filters {
   padding: $space;
   background: $surface;

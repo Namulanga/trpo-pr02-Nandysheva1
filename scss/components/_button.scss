@@ -1,4 +1,6 @@
 @use '../variables' as *;
+@use '../functions' as *;
+@use '../mixins' as *;
 .button {
   padding: 8px $space;
   font: inherit;

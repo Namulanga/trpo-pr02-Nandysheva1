@@ -1,5 +1,6 @@
 @use '../variables' as *;
-
+@use '../functions' as *;
+@use '../mixins' as *;
 .catalog {
   &__head {
     display: flex;
@@ -50,5 +51,14 @@
   &__price {
     font-size: 1.25rem;
     font-weight: 700;
+  }
+    @include up-to($bp-mobile) {
+    &__body {
+      padding: space(0.75);
+    }
+
+    &__image {
+      aspect-ratio: 21 / 9;
+    }
   }
 }

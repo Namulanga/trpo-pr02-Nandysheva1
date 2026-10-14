@@ -1,0 +1,4 @@
+@use 'variables' as *;
+@function space($n) {
+  @return $space * $n;
+}
