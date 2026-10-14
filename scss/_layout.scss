@@ -2,60 +2,63 @@
 @use 'functions' as *;
 @use 'mixins' as *;
 .container {
-  @include container;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 16px;
 }
 .site-header {
-  background: $surface;
-  border-bottom: 1px solid $border;
+  background: #ffffff;
+  border-bottom: 1px solid #e4e7ec;
   &__inner {
-    @include container;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: $space;
-    padding-block: $space;
+    gap: 16px;
   }
   &__logo {
     font-size: 1.25rem;
     font-weight: 700;
-    color: $accent;
+    color: #315efb;
     text-decoration: none;
   }
 }
 .nav {
   display: flex;
-  gap: $space;
+  gap: 16px;
 
   &__link {
-    color: $text;
+    color: #1f2937;
     text-decoration: none;
-    @include focus-ring;
+
     &:hover {
-      color: $accent;
+      color: #315efb;
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba(49, 94, 251, 0.45);
+      outline-offset: 2px;
     }
   }
 }
 .page {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: space(2);
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 32px;
   align-items: start;
-  padding-block: space(2);
-  @include up-to($bp-tablet) {
+  padding-block: 32px;
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 }
 .site-footer {
-  margin-top: space(2);
-  padding-block: space(1.5);
+  margin-top: 32px;
+  padding-block: 24px;
   text-align: center;
-  color: $muted;
-  border-top: 1px solid $border;
-}
-@include up-to($bp-mobile) {
-  .nav {
-    flex-direction: column;
-    gap: space(0.5);
-    text-align: right;
-  }
+  color: #667085;
+  border-top: 1px solid #e4e7ec;
 }
